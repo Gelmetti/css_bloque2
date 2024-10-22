@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01_keyframe</title>
+    <style>
+        body{
+            background-color: burlywood;
+        }
+        .box{
+            background-color: aliceblue;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            animation: animate2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes animate1{
+            
+            from{
+                left: 0;
+            }
+           
+            to{
+                left: 200px;
+            }
+        }
+
+        @keyframes animate2{
+            0%{
+                top: 0;
+                left: 0;
+                border-radius: 0 0 0 0;
+                background-color: red;
+
+            }
+             25%{
+                top: 0 ;
+                left: 200px;
+                border-radius: 50% 0 0 0;
+                background-color: blueviolet;
+
+            }
+            
+            50%{
+                top: 200px;
+                left: 200px;
+                border-radius: 50% 50% 0 0;
+                background-color: chartreuse;
+                
+            }
+
+            75%{
+                top: 200px;
+                left: 0;
+                border-radius: 50% 50% 50% 0;
+                background-color: black;
+            }
+
+            100%{
+                top: 0;
+                left: 0;
+                border-radius: 50% 50% 50% 50%;
+                left: 200px;
+                background-color: brown;
+
+            }
+        }
+        h1{
+            animation-name: animate1;
+            animation-duration: 10s;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"> </div>
+    <h1>hello animation</h1>
+</body>
+</html>
