@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        .container{
+            display: flex;
+        }
+
+        .box{
+            background-color: coral;
+            padding: 1rem;
+            margin: 2rem;
+            /* offset-x | offset-y | color*/
+            box-shadow: 10px 10px teal;
+            /* valores negativos */
+            box-shadow: -5px -5px 10px red;
+            /* offset-x | offset-y | color | spread-radius*/
+            box-shadow: 10px 10px 10px 6px teal;
+            /* inset | offset-x | offset-y | color */
+            box-shadow: inset -5px -5px 10px 2px rgb(6, 150, 37);
+            /* multiple sombras */
+            box-shadow: 33px 33px red, -10px -10px greenyellow;
+        }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="box">
+        <h3>titulo</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque magni,
+          ipsum incidunt iure omnis voluptatem asperiores facere aperiam
+          mollitia nemo officiis consectetur minus corrupti dolor accusantium,
+          porro recusandae labore! Commodi!
+        </p>
+      </div>
+
+      <div class="box">
+        <h3>titulo</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias et
+          iusto impedit cum non veritatis architecto exercitationem accusantium?
+          Consequatur ab consectetur aliquam veritatis quam at voluptate quae
+          atque natus magnam!
+        </p>
+      </div>
+
+      <div class="box">
+        <h3>titulo</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
+          illum alias assumenda error at sapiente magni aliquid corrupti, saepe
+          repellendus nemo! Ea sit asperiores voluptates quam autem quisquam
+          temporibus molestiae!
+        </p>
+      </div>
+
+    </div>
+  </body>
+</html>
