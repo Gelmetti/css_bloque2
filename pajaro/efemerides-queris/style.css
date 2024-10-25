@@ -1,0 +1,38 @@
+body{
+    background-color: burlywood;
+}
+main{
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+section{
+    background-color: coral;
+    border: darkorange 5px solid;
+    border top: 0;
+    margin: 10px;
+}
+
+section h2{
+     background-color: aqua;
+     margin: 0;
+}
+
+article{
+    background-color: blueviolet;
+    border: darkred solid 5px;
+    border-top: 0;
+    margin: 10px 4%;
+    float: left;
+    width: 40%;
+}
+
+article h3{
+    background-color: darkred;
+    margin: 0;
+
+}
+
+article p{
+    padding: 5px;
+}
