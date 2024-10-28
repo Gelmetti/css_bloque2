@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex container</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .flex-container{
+            display:flex;
+            /* flex-direction: row;
+            flex-wrap: nowrap; */
+            background-color: blanchedalmond;
+            height: 50vh;
+        }
+
+        .item{
+            background-color: cadetblue;
+            border: #333 2px solid;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            flex: 1;
+        }
+        
+        .item-1{
+            flex-shrink: 5;
+        }
+
+        .item-2{
+            flex-shrink: 0;
+        }
+        .item-3{
+            flex-shrink: 0;
+        }
+
+
+       
+
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="flex-container" >
+
+        <div class="item item-1">
+            <h3>item1</h3>
+        </div>
+
+        <div class="item item-2">
+            <h3>item 2</h3>
+        </div>
+
+        <div class="item item-3">
+            <h3>item 3</h3>
+        </div>
+
+
+    </div>
+</body>
+</html>
