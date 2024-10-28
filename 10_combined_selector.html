@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*selector desendiento*/
+
+        div p{
+            color:blue
+        }
+
+        /* si div es padre directo de p*/
+
+        div > p {
+            color:orange;
+        }
+
+        /* si parrafo es hermano que sigue a  div*/
+
+        div + p {
+            color: red;
+        }
+
+        /* todos los parrafos hermanos */
+
+        div ~ p{
+            color: green;
+        }
+
+        /* selectores de atributos */
+        a[target] { background-color: brown;}
+
+        input[required]{
+            background-color: blueviolet;}
+
+            input[type="text"],
+            input[type="email"]
+            {
+                width: 100%;
+            }
+
+
+
+        
+
+
+
+    </style>
+</head>
+<body>
+
+    <p>parrafo antes del div</p>
+    <div>
+        <p>primer parrafo dentro del div</p>
+        <ul>
+            <li>elemento1</li>
+            <li>elemento 2 <p>parrrafo dentro de elemento 2</p></li>
+            <li>elemento 3</li>
+        </ul>
+        <p>segundo parafo dentro del div</p>
+        <p>tercer parrafo del div</p>
+        <a href="#">pagina 1</a>
+        <a href="pagina2.html">pagina 2</a>
+        <a href="http://google.es" target="blank">ir a google</a>
+        <br>
+        <br>
+
+        <form action="#">
+            <input type="text" placeholder="nombre" required>
+            <input type="email" placeholder="email">
+            <input type="submit" value="enviar">
+        </form>
+    </div>
+
+    
+
+    <p>parrafo fuera del div</p>
+    <p>otro parrafo del div</p>
+</body>
+
+</html>
+
