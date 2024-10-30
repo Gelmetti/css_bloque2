@@ -5,36 +5,57 @@ body {
 }
 
 .header {
-  display: flex;
-  justify-content: start;
+ display: flex;
   padding: 10px;
   align-items: center;
   background-color: white;
   gap: 20px;
 }
 
-.end{
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  background-color: white;
-  gap: 15px;
-}
 
-.profile-image {
-}
+
+
 
 .logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
   font-size: larger;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: darkorchid;
   font-size: 1.4rem;
 }
 
-button {
+.button {
   background-color: blueviolet;
   border-radius: 20%;
   color: white;
+
+  
+  
+ 
+}
+
+.start{
+  display: flex;
+  flex: 2;
+}
+
+.profile-image{
+  width: 50px;
+  height: 50px;
+  background-color: darkorchid;
+  border-radius: 50%;
+
+  
+}
+
+.end{
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  
+  
 }
 
 a {
@@ -47,12 +68,8 @@ ul {
   list-style: none;
 }
 
-.profile-image{
-  width: 50px;
-  height: 50px;
-  background-color: darkorchid;
-  border-radius: 50%;
-}
+
+
 
 
 
